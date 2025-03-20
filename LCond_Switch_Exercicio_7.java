@@ -1,14 +1,15 @@
 package java_5;
 
 import java.util.Scanner;
+import java.util.SortedMap;
 
-public class LCond_Switch_Exercico_7 {
+public class LCond_Switch_Exercicio_7 {
 
 	public static void main(String[] args) {
 	Scanner lerScanner = new Scanner(System.in);
 	
 	int operacao; 
-	float num1, num2, resul;
+	float num1, num2, resul= 0;
 	
 	System.out.println("Digite o 1º número: ");
 	num1 = lerScanner.nextFloat();
@@ -25,19 +26,22 @@ public class LCond_Switch_Exercico_7 {
 	
 	switch (operacao) {
 	case 1: {
-	  System.out.printf("Resultado da Soma: %.1f", num1 + num2  );
+		resul = num1 + num2;
+	  System.out.printf("%.1f + %.1f = %.1f", num1, num2, resul);
 	break;	
 	}
     case 2: {
-	   System.out.printf("Resultado da Subtração: %.1f ", num1 - num2);
+    	resul = num1 - num2;
+	   System.out.printf("%.1f - %.1f = %.1f", num1, num2, resul);
 	break;	
 	}
     case 3: {
-	   System.out.printf("Resultado da Multiplicação: %.1f ", num1 * num2);
+    	resul = num1 * num2;
+	   System.out.printf("%.1f * %.1f = %.1f", num1, num2, resul);
 	break;
     }
    case 4: {
-	   System.out.printf("Resultado da Divisão: %.1f ", num1 / num2);
+	   System.out.printf("%.1f / %.1f = %.1f", num1 ,num2, resul);
    break;
    }
    default:
